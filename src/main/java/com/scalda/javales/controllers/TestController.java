@@ -279,8 +279,6 @@ public class TestController {
 
         if (Animal.getPartner() != null) {
             Animal.divorce();
-        } else {
-            System.out.println("Nope");
         }
 
         return "redirect:/humans";

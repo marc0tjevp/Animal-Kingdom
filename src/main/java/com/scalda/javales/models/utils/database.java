@@ -30,7 +30,7 @@ public class database {
             stmt.close();
             conn.close();
         } catch (SQLException se) {
-            se.printStackTrace();
+            System.out.println(se.toString());
         }
     }
 }

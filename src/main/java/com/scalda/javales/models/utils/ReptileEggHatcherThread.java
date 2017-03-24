@@ -23,9 +23,8 @@ public class ReptileEggHatcherThread extends Thread {
             sleep(10000);
 
             //reptileCage.addReptileEggs(reptileEggs);
-
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.out.println(e.toString());
         }
     }
 

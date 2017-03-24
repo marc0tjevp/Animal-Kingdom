@@ -92,8 +92,6 @@ public abstract class Animal {
             this.getGender().propagate(this, partner);
             partner.getGender().propagate(this, partner);
 
-            System.out.println("Propagated");
-            
             return true;
         } else {
             return false;

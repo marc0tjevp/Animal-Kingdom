@@ -60,7 +60,6 @@ public class Female extends Gender {
 
     public boolean isPregnant() {
         if (iEggs.size() != 0) {
-            System.out.println("Cant make eggs now!");
             return true;
         }
 
@@ -75,7 +74,6 @@ public class Female extends Gender {
             for (Egg e : tempEggs) {
                 e.inseminate(partner1, partner2);
                 iEggs.add(e);
-                System.out.println("This egg is inseminated now");
             }
 
         }

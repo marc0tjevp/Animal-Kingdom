@@ -23,21 +23,17 @@ public class OvulatingThread extends Thread {
                 sleep(2500);
                 if (fem.isPregnant() != true) {
                     fem.ovulate();
-                } else {
-                    System.out.println("Cant ovulate");
                 }
 
                 sleep(1500);
 
                 if (fem.isPregnant() != true) {
                     fem.menstruate();
-                } else {
-                    System.out.println("Cant menstruate");
                 }
 
             }
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.out.println(e.toString());
         }
 
     }
